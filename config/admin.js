@@ -19,5 +19,8 @@ module.exports = ({ env }) => ({
   },
   preview: {
     enabled: true,
+      config: {
+      allowedOrigins: env("http://localhost:3000"),
+    }
   }
 });
