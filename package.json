@@ -37,6 +37,6 @@
     "installId": "83397769ab9875d0a1365e18bbdae1dc08aba5b5bdb2bc64238f02aea73e7ab0"
   },
    "overrides": {
-    "zod": "3.23.8"
+    "zod": "^3.22.4"
   }
 }
