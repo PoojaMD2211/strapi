@@ -11,9 +11,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "product_list": {
       "type": "component",
       "component": "shared.cta",
+      "repeatable": true
+    },
+    "logo": {
+      "type": "component",
+      "component": "shared.custom-image",
+      "repeatable": false
+    },
+    "feature_list": {
+      "type": "component",
+      "component": "shared.feature-card",
       "repeatable": true
     }
   }

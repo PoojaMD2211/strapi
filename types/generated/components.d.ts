@@ -7,7 +7,28 @@ export interface SharedCta extends Struct.ComponentSchema {
   };
   attributes: {
     buttontext: Schema.Attribute.String;
-    description: Schema.Attribute.String;
+    disabled: Schema.Attribute.Boolean;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface SharedCustomImage extends Struct.ComponentSchema {
+  collectionName: 'components_shared_custom_images';
+  info: {
+    displayName: 'Custom Image';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SharedFeatureCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_feature_cards';
+  info: {
+    displayName: 'FeatureCard';
+  };
+  attributes: {
+    desc: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
 }
@@ -92,6 +113,8 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.cta': SharedCta;
+      'shared.custom-image': SharedCustomImage;
+      'shared.feature-card': SharedFeatureCard;
       'shared.hero-banner': SharedHeroBanner;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;

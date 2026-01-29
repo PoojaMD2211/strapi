@@ -580,14 +580,16 @@ export interface ApiHomePageHomePage extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    feature_list: Schema.Attribute.Component<'shared.feature-card', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::home-page.home-page'
     > &
       Schema.Attribute.Private;
+    logo: Schema.Attribute.Component<'shared.custom-image', false>;
+    product_list: Schema.Attribute.Component<'shared.cta', true>;
     publishedAt: Schema.Attribute.DateTime;
-    title: Schema.Attribute.Component<'shared.cta', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

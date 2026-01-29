@@ -5,14 +5,14 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
-    },
     "buttontext": {
       "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "disabled": {
+      "type": "boolean"
     }
   },
   "config": {}
