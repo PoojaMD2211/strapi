@@ -22,6 +22,19 @@ export interface SharedCustomImage extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCustomTradingUi extends Struct.ComponentSchema {
+  collectionName: 'components_shared_custom_trading_uis';
+  info: {
+    displayName: 'Custom Trading UI';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+    utm_params: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedFeatureCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_feature_cards';
   info: {
@@ -44,6 +57,17 @@ export interface SharedHeroBanner extends Struct.ComponentSchema {
       true
     >;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedLogin extends Struct.ComponentSchema {
+  collectionName: 'components_shared_logins';
+  info: {
+    displayName: 'Login';
+  };
+  attributes: {
+    disabled: Schema.Attribute.Boolean;
+    login: Schema.Attribute.String;
   };
 }
 
@@ -114,8 +138,10 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'shared.cta': SharedCta;
       'shared.custom-image': SharedCustomImage;
+      'shared.custom-trading-ui': SharedCustomTradingUi;
       'shared.feature-card': SharedFeatureCard;
       'shared.hero-banner': SharedHeroBanner;
+      'shared.login': SharedLogin;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

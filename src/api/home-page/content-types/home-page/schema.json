@@ -25,6 +25,14 @@
       "type": "component",
       "component": "shared.feature-card",
       "repeatable": true
+    },
+    "trading_list": {
+      "type": "component",
+      "component": "shared.custom-trading-ui",
+      "repeatable": true
+    },
+    "header_text": {
+      "type": "string"
     }
   }
 }

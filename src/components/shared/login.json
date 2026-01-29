@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_logins",
+  "info": {
+    "displayName": "Login"
+  },
+  "options": {},
+  "attributes": {
+    "login": {
+      "type": "string"
+    },
+    "disabled": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

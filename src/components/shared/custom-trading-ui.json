@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_custom_trading_uis",
+  "info": {
+    "displayName": "Custom Trading UI"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    },
+    "utm_params": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

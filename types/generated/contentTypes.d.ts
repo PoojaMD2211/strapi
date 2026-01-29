@@ -581,6 +581,7 @@ export interface ApiHomePageHomePage extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     feature_list: Schema.Attribute.Component<'shared.feature-card', true>;
+    header_text: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -590,6 +591,7 @@ export interface ApiHomePageHomePage extends Struct.CollectionTypeSchema {
     logo: Schema.Attribute.Component<'shared.custom-image', false>;
     product_list: Schema.Attribute.Component<'shared.cta', true>;
     publishedAt: Schema.Attribute.DateTime;
+    trading_list: Schema.Attribute.Component<'shared.custom-trading-ui', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
